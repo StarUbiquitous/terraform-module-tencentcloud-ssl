@@ -26,7 +26,7 @@ locals {
 }
 
 module "domains" {
-  source = "StarUbiquitous/tencentcloud/module"
+  source = "StarUbiquitous/tencentcloud-ssl/module"
 
   for_each = {
   for domain in local.domains : domain.name => {
